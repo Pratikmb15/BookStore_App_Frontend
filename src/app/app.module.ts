@@ -10,15 +10,27 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSelectModule } from '@angular/material/select';
+import { MatBadgeModule } from '@angular/material/badge';
+
+
+
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthLayoutComponent } from './Components/auth-layout/auth-layout.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { DisplayBooksComponent } from './Components/display-books/display-books.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthLayoutComponent,
+    DashboardComponent,
+    DisplayBooksComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +44,10 @@ import { AuthLayoutComponent } from './Components/auth-layout/auth-layout.compon
     MatFormFieldModule,
     MatIconModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatToolbarModule,
+    MatSelectModule,
+    MatBadgeModule,
   ],
   providers: [
     provideClientHydration(withEventReplay())
